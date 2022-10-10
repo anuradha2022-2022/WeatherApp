@@ -53,7 +53,7 @@ function showmedata(weather)
     //  let daynighttemp=document.getElementById('daynighttemp');
     //  daynighttemp.innerText= `${weather.main.temp_max}&deg;C  (MIN) / ${weather.main.temp_min}&deg;C (MAX) `;
      
-    // let daydate=document.getElementById('day-date');
+    
 
      if(weathertype.textContent == "Haze")
      {
@@ -89,7 +89,23 @@ function showmedata(weather)
         document.body.style.backgroundImage= "url('images/thunderstorm.jpg')";
      }
 
+
+     let daydate=document.getElementById('day-date');
+    let todayDate=new Date();
+    daydate.innerText=datemanage(todayDate);
+
 }
+function datemanage(datearg){
+    let days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+    let months=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    let year=datearg.getFullYear();
+    let month=months[datearg.getMonth()];
+    let date=datearg.getDate();
+    let day=days[datearg.getDay()];
+
+    return `${date} ${month}, ${year} (${day}) `;
+}
+
 
 
 
