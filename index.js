@@ -54,6 +54,8 @@ function showmedata(weather)
     //  daynighttemp.innerText= `${weather.main.temp_max}&deg;C  (MIN) / ${weather.main.temp_min}&deg;C (MAX) `;
      
     // let daydate=document.getElementById('day-date');
+    
+    // onclick the bacground is changed
 
      if(weathertype.textContent == "Haze")
      {
