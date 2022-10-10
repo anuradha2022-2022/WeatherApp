@@ -1,5 +1,5 @@
 body{
-    background-image: url('normal\ weather.jpg');
+    background-image: url('images/normal weather.jpg');
     background-size: cover;
     width:100vw;
     height:100vh;
@@ -80,10 +80,11 @@ body{
     margin:20px 0;
     text-shadow: 2px 4px rgba(0,0,0,0.3);
 }
-.temp-day-night-min-max,.weathertype{
+.temp-day-night-min-max, .weathertype{
     font-size:12pt;
     font-weight:600;
 }
+
 
 
 
